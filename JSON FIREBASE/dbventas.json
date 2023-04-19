@@ -1,0 +1,259 @@
+{
+  "dbalmacen" : {
+    "categoria" : {
+      "deporte" : {
+        "imagen" : "https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-colorful-football-world-cup-football-logo-football-png-image_486603.jpg",
+        "nombre" : "Deportes",
+        "productos" : {
+          "-MMSp8YAYGSzZn1WZpAv" : {
+            "descripcion" : "ADIDAS ZAPATILLAS DEPORTIVAS ENERGYFALCON PARA HOMBRE",
+            "detalle" : "TALLAS: 40, 39, 41",
+            "imagen" : "https://home.ripley.com.pe/Attachment/WOP_5/2084233284879/2084233284879_2.jpg",
+            "nombre" : "ADIDAS",
+            "precio" : 279,
+            "stock" : 10
+          },
+          "-MMSppGbcXvoxvXR0a4l" : {
+            "descripcion" : "ADIDAS BUZO TRACKSUIT TEAMSPORTS",
+            "detalle" : "TALLAS: XS, S ,L",
+            "imagen" : "https://home.ripley.com.pe/Attachment/WOP_5/2020246227359/2020246227359_2.jpg",
+            "nombre" : "ADIDAS",
+            "precio" : 259,
+            "stock" : 25
+          }
+        }
+      },
+      "libros" : {
+        "imagen" : "https://lahoradigital.com/fotos/1/Dadellibro2020_thumb_460.jpeg",
+        "nombre" : "Libros",
+        "productos" : {
+          "-MMSqiY8nJhXUeBvt_Oc" : {
+            "descripcion" : "Editorial: Editorial Planeta",
+            "detalle" : "autor: ariela",
+            "imagen" : "https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2020/06/05112447/9786124580918.jpg",
+            "nombre" : "PLANETA ÉTICA PARA AMADOR",
+            "precio" : 45,
+            "stock" : 25
+          },
+          "-MMSrOjbinO1xDgJoyVX" : {
+            "descripcion" : "Editorial: AMAT EDITORIAL",
+            "detalle" : "Marca : IBERO LIBRERÍAS",
+            "imagen" : "https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2019/10/15113811/9788417208691.jpg",
+            "nombre" : "EL LENGUAJE DEL CUERPO",
+            "precio" : 99,
+            "stock" : 25
+          },
+          "-MMgPIdZpFp2-5e18vQ4" : {
+            "descripcion" : "Falta una hora para que la Tierra caiga ante Mundo Guerra y los mayores he roes de la humanidad esta n enfrentados. ¿Lograra n dejar de estarlo y salvarla?",
+            "detalle" : "DC COMICS",
+            "imagen" : "https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2020/10/03141535/9788416152551.jpg",
+            "nombre" : "BATMAN/SUPERMAN 09 (ECC COMICS)",
+            "precio" : 21,
+            "stock" : 25
+          }
+        }
+      },
+      "tecnologia" : {
+        "imagen" : "https://www.mundiario.com/media/mundiario/images/2018/01/11/2018011116553551712.jpg",
+        "nombre" : "Tecnologia",
+        "productos" : {
+          "-MMSfe6qrDTyu9aOVOWG" : {
+            "descripcion" : "SAMSUNG SMART TIV CRYSTAL UHD 4K",
+            "detalle" : "modelo: un58tu7000 | pulgadas: de 54 a 59",
+            "imagen" : "https://plazavea.vteximg.com.br/arquivos/ids/202280-1000-1000/20125026.jpg",
+            "nombre" : "SAMSUNG",
+            "precio" : 1799,
+            "stock" : 20
+          },
+          "-MMSoZR9D3CRw9xWmaQP" : {
+            "descripcion" : "HP LAPTOP 15-GW0012LA AMD RYZEN 5",
+            "detalle" : "modelo: 2045455 | pulgadas: 15.6",
+            "imagen" : "https://home.ripley.com.pe/Attachment/WOP_5/2004253194545/2004253194545_2.jpg",
+            "nombre" : "hp",
+            "precio" : 2199,
+            "stock" : 20
+          }
+        }
+      }
+    }
+  },
+  "tiendas" : {
+    "-MMlqM-odpUzaB3hWu2-" : {
+      "direccion1" : "C.C Mall de Sur.AV. Los Lirios",
+      "direccion2" : "San juan de miraflores",
+      "nombretienda" : "Tienda 1",
+      "ubicacion" : "Atocongo"
+    },
+    "-MMlqg7Ylav9Ebal8tj3" : {
+      "direccion1" : "C.C Mall Plaza.AV.Oscar R.",
+      "direccion2" : "Benavides 3866 - Bellavista",
+      "nombretienda" : "Tienda 2",
+      "ubicacion" : "Bella vista"
+    },
+    "-MMlqs4_4GDPqeD3CUYN" : {
+      "direccion1" : "C.C Sur Plaza Boulevard. Car.",
+      "direccion2" : "Panamericana Sur Km. 97.5",
+      "nombretienda" : "Tienda 3",
+      "ubicacion" : "Boulervard Asia"
+    },
+    "-MMlr1PlCkDYK2WOzrBW" : {
+      "direccion1" : "C.C La Rambla.AV. Brasil 702",
+      "direccion2" : "Breña",
+      "nombretienda" : "Tienda 4",
+      "ubicacion" : "Breña"
+    },
+    "-MMlrEvUow5X5G4OlxOB" : {
+      "direccion1" : "C.C Plaza Lima Sur.AV Paseo de la republica",
+      "direccion2" : "355 - Chorillos",
+      "nombretienda" : "Tienda 5",
+      "ubicacion" : "Chorrillos"
+    },
+    "-MMlrQ72BiBzIPVKRxVc" : {
+      "direccion1" : "C.C Jockey Plaza. Av.javier prado",
+      "direccion2" : "Este 4200 - Santiago de Surco",
+      "nombretienda" : "Tienda 6",
+      "ubicacion" : "Jockey Plaza"
+    },
+    "-MMlrYUNo94tQ9zHs7lg" : {
+      "direccion1" : "C.C Mega Plaza. AV.Alfredo",
+      "direccion2" : "Mendiola 3696 - Los Olivos",
+      "nombretienda" : "Tienda 7",
+      "ubicacion" : "Los Olivos"
+    },
+    "-MMlrhDNTmLsqjhZ-vbx" : {
+      "direccion1" : "C.C Real Plaza Primavera.Calle",
+      "direccion2" : "Jorge Muelle SN- San borja",
+      "nombretienda" : "Tienda 8",
+      "ubicacion" : "Primavera"
+    },
+    "-MMlrrFq5XAgKZGUAcxv" : {
+      "direccion1" : "C.C Mall Aventura. AV.Carretera",
+      "direccion2" : "Centrall 111 - Santa Anita",
+      "nombretienda" : "Tienda 9",
+      "ubicacion" : "Santa Anita"
+    },
+    "-MMls-vL6md17nTuQ9wy" : {
+      "direccion1" : "C.C Mall Plaza. AV. Los angeles 64",
+      "direccion2" : "Comas",
+      "nombretienda" : "Tienda 10",
+      "ubicacion" : "Comas"
+    }
+  },
+  "ubigeo" : {
+    "departamento" : {
+      "-MMlepOFOxLEb-YKy5Xk" : {
+        "nombredepartamento" : "Arequipa"
+      },
+      "-MMletz9RG7bK_9W2Wd_" : {
+        "nombredepartamento" : "Lima"
+      },
+      "-MMlf-iBw5XgMlnxlq34" : {
+        "nombredepartamento" : "Huanuco"
+      }
+    },
+    "distrito" : {
+      "-MMlfxec5nWjAh8n3RFB" : {
+        "nombredistrito" : "Lima",
+        "nombreprovincia" : "Lima"
+      },
+      "-MMlg0aKqGPOmb_dnbof" : {
+        "nombredistrito" : "Ate",
+        "nombreprovincia" : "Lima"
+      },
+      "-MMlg2R_e_RkW2nKZiW_" : {
+        "nombredistrito" : "Breña",
+        "nombreprovincia" : "Lima"
+      },
+      "-MMlg5dPeYzALQgBZ_gi" : {
+        "nombredistrito" : "Punta Negra",
+        "nombreprovincia" : "Lima"
+      },
+      "-MMlgAb6u3F01NgQ_3e-" : {
+        "nombredistrito" : "Huacho",
+        "nombreprovincia" : "Huarua"
+      },
+      "-MMlgE03UNk324Y0IZUT" : {
+        "nombredistrito" : "Ambar",
+        "nombreprovincia" : "Huarua"
+      },
+      "-MMlgHVfky6IkfQ5-k2I" : {
+        "nombredistrito" : "Sayan",
+        "nombreprovincia" : "Huarua"
+      },
+      "-MMlgPGv5NOektXTN7Io" : {
+        "nombredistrito" : "Arequipa",
+        "nombreprovincia" : "Arequipa"
+      },
+      "-MMlgRgv0eyHbZn0QZeU" : {
+        "nombredistrito" : "Mariano melgar",
+        "nombreprovincia" : "Arequipa"
+      },
+      "-MMlgT9-d3kxWDZYR9CW" : {
+        "nombredistrito" : "La joya",
+        "nombreprovincia" : "Arequipa"
+      },
+      "-MMlgYWMu7twsxmC9AT8" : {
+        "nombredistrito" : "Camana",
+        "nombreprovincia" : "Camana"
+      },
+      "-MMlg_rvguCPXDsAsASL" : {
+        "nombredistrito" : "Quilca",
+        "nombreprovincia" : "Camana"
+      },
+      "-MMlgf56JrNaj4_nWdDv" : {
+        "nombredistrito" : "Ambo",
+        "nombreprovincia" : "Ambo"
+      },
+      "-MMlghOfdlhkPi0XK-8Z" : {
+        "nombredistrito" : "Cayna",
+        "nombreprovincia" : "Ambo"
+      },
+      "-MMlgj7pEe4IsWoXiegv" : {
+        "nombredistrito" : "Colpas",
+        "nombreprovincia" : "Ambo"
+      },
+      "-MMlgmIoPkSG_dCHLRYe" : {
+        "nombredistrito" : "Huanuco",
+        "nombreprovincia" : "Huanuco"
+      },
+      "-MMlgoX1BLY43mz129wi" : {
+        "nombredistrito" : "Amarilis",
+        "nombreprovincia" : "Huanuco"
+      },
+      "-MMlgr87zFRgOgjCDkMc" : {
+        "nombredistrito" : "Chinchao",
+        "nombreprovincia" : "Huanuco"
+      },
+      "-MMlgsm-k-J2y2sYcsFr" : {
+        "nombredistrito" : "Margos",
+        "nombreprovincia" : "Huanuco"
+      }
+    },
+    "provincia" : {
+      "-MMlfEDruHjt3HTUrpcb" : {
+        "nombredepartamento" : "Lima",
+        "nombreprovincia" : "Lima"
+      },
+      "-MMlfOR9avi4yu5xTAS9" : {
+        "nombredepartamento" : "Lima",
+        "nombreprovincia" : "Huarua"
+      },
+      "-MMlfV_s_iEhS9piiKyO" : {
+        "nombredepartamento" : "Arequipa",
+        "nombreprovincia" : "Arequipa"
+      },
+      "-MMlfZ6OM3x-Sw2PnAx1" : {
+        "nombredepartamento" : "Arequipa",
+        "nombreprovincia" : "Camana"
+      },
+      "-MMlfjNbMGJHh2cGxWw2" : {
+        "nombredepartamento" : "Huanuco",
+        "nombreprovincia" : "Ambo"
+      },
+      "-MMlfkVkcDGaU6qWNS0_" : {
+        "nombredepartamento" : "Huanuco",
+        "nombreprovincia" : "Huanuco"
+      }
+    }
+  }
+}

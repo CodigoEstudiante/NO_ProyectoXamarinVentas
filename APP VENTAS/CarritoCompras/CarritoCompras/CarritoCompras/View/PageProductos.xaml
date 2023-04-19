@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageProductos"
+             BackgroundColor="#D6D6D6">
+    <StackLayout Padding="10">
+         
+        <CollectionView x:Name="cvListaProductos" ItemsSource="{Binding oListaProductos}" SelectionMode="Single" VerticalScrollBarVisibility="Never" SelectionChanged="CvListaProductos_SelectionChanged">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="6" HorizontalItemSpacing="6" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="5" CornerRadius="5" HasShadow="True">
+                        <Grid Margin="0" Padding="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="160"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Source="{Binding imagen}" HeightRequest="150" WidthRequest="110" />
+                            <StackLayout Grid.Row="1">
+                                <Label Text="{Binding nombre}" LineBreakMode="NoWrap"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="2">
+                                <Label Text="{Binding precio, StringFormat='S/.{0}'}"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PagePopup"
+             BackgroundColor="#ECECEC">
+    <ContentPage.Content>
+
+        
+
+        <!--<Grid BackgroundColor="#000000" Opacity="1">
+            <StackLayout Margin="10" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#ffffff" Padding="5" Opacity="1">-->
+                <Frame Margin="10" Padding="5" VerticalOptions="CenterAndExpand" Opacity="1" BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Label LineBreakMode="WordWrap">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan placerat fermentum. Mauris vel dignissim eros. Mauris vulputate dolor aliquet, luctus turpis non, efficitur mi. Nulla sodales id sapien vel malesuada. Curabitur mi odio, sagittis eget eros at, auctor egestas ligula. Morbi a dolor congue, feugiat odio at, malesuada ipsum. Nullam molestie felis vel lorem pharetra, non sollicitudin magna condimentum. Mauris quis nibh lectus. Phasellus eros nunc, aliquet id lorem lacinia, pulvinar dignissim libero. Phasellus ac sapien dapibus, aliquam nibh ac, mollis nulla. Suspendisse ac finibus nisi. Nulla luctus bibendum massa at congue.
+
+Pellentesque et volutpat odio. Phasellus at tempor libero, quis congue arcu. Aliquam a viverra ipsum. Nullam metus arcu, consectetur ac feugiat in, feugiat eget lacus. In at interdum nunc. Sed eget urna efficitur, laoreet arcu sed, lacinia lacus. Aenean ornare quam sed ornare sollicitudin.
+                        </Label>
+                        <Button HorizontalOptions="FillAndExpand" BackgroundColor="#1964BE" Opacity="1" TextColor="White" x:Name="btnCerrarModal" Clicked="BtnCerrarModal_Clicked" Text="Aceptar"></Button>
+                    </StackLayout>
+                </Frame>
+            <!--</StackLayout>
+        </Grid>-->
+        
+    </ContentPage.Content>
+</ContentPage>

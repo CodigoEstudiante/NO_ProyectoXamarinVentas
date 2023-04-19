@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageRegistro"
+             BackgroundColor="#A7A7A7">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <Grid HorizontalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Padding="10" Margin="10" HasShadow="True" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout>
+                        <StackLayout>
+                            <Image Source="close.png" Aspect="AspectFill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="TapBackArrow" Tapped="TapBackArrow_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+
+                        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="5">
+                            <Label Font="20" TextColor="#860000">Completa el siguiente formulario</Label>
+                        </StackLayout>
+                        <Entry x:Name="txtNombre" Placeholder="Nombres" TextColor="Black" Text="test"/>
+                        <Entry x:Name="txtApellido" Placeholder="Apellidos" TextColor="Black" Text="user"/>
+                        <Entry x:Name="txtDocumento" Placeholder="Documento Identidad" TextColor="Black" Text="78897889"/>
+                        <Entry x:Name="txtEmail" Placeholder="Email" TextColor="Black" Text="testuser@gmail.com"/>
+                        <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" TextColor="Black" Text="testuser123"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox x:Name="chkAceptaTerminos" Grid.Row="0" Grid.Column="0" Color="#1964BE" VerticalOptions="Center"></CheckBox>
+                            <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center">Acepto los</Label>
+                            <Label Grid.Row="0" Grid.Column="2" TextColor="#1964BE" TextDecorations="Underline" VerticalOptions="Center">términos y condiciones
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="TapLabelTerminosCondiciones" Tapped="TapLabelTerminosCondiciones_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+
+
+                        <Button x:Name="btnRegistrar" Text="Registrarme" BackgroundColor="#1964BE" TextColor="White" Clicked="BtnRegistrar_Clicked"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <ContentView x:Name="popupTerminosCondiciones" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <Frame Margin="10" Padding="10" BackgroundColor="#ffffff" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <Label LineBreakMode="WordWrap">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan placerat fermentum. Mauris vel dignissim eros. Mauris vulputate dolor aliquet, luctus turpis non, efficitur mi. Nulla sodales id sapien vel malesuada. Curabitur mi odio, sagittis eget eros at, auctor egestas ligula. Morbi a dolor congue, feugiat odio at, malesuada ipsum. Nullam molestie felis vel lorem pharetra, non sollicitudin magna condimentum. Mauris quis nibh lectus. Phasellus eros nunc, aliquet id lorem lacinia, pulvinar dignissim libero. Phasellus ac sapien dapibus, aliquam nibh ac, mollis nulla. Suspendisse ac finibus nisi. Nulla luctus bibendum massa at congue.
+                            Pellentesque et volutpat odio. Phasellus at tempor libero, quis congue arcu. Aliquam a viverra ipsum. Nullam metus arcu, consectetur ac feugiat in, feugiat eget lacus. In at interdum nunc. Sed eget urna efficitur, laoreet arcu sed, lacinia lacus. Aenean ornare quam sed ornare sollicitudin.
+                        </Label>
+                        <Button HorizontalOptions="FillAndExpand" BackgroundColor="#1964BE" Opacity="1" TextColor="White" x:Name="btnCerrarModal" Clicked="BtnCerrarModal_Clicked" Text="Aceptar"></Button>
+
+                    </StackLayout>
+                </Frame>
+            </ContentView>
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>

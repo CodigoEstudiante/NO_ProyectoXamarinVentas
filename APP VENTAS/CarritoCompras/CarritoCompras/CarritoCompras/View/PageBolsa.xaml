@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageBolsa"
+             BackgroundColor="#D6D6D6"
+             Title="Bolsa">
+  
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <Grid RowSpacing="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" VerticalOptions="Start" BackgroundColor="#ffffff" Padding="0,8" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0">Monto Total:</Label>
+                        <Label x:Name="lblMontoTotal" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" TextColor="#9C2424"  FontAttributes="Bold">S/.0</Label>
+                        <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" x:Name="btnContinuar" Text="Continuar" 
+                                                    BackgroundColor="#2FB96E" FontSize="12" HeightRequest="35"
+                                                    TextColor="White" Clicked="BtnContinuar_Clicked" Padding="0" />
+                    </Grid>
+                    
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <ListView  x:Name="ListViewBolsa" ItemsSource="{Binding oListaBolsa}" HasUnevenRows="True" IsPullToRefreshEnabled="False">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame Margin="5,5">
+                                        <Grid x:Name="Item" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="180" RowSpacing="6">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Grid.Column="0" Source="{Binding producto.imagen}" Aspect="Fill" HeightRequest="100" WidthRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                                            <Grid Grid.Column="1">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="auto"/>
+                                                    <RowDefinition Height="auto"/>
+                                                </Grid.RowDefinitions>
+                                                <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start">
+                                                    <Label Text="{Binding producto.nombre}" Margin="10" TextColor="Black" FontSize="12"/>
+                                                </StackLayout>
+                                                <Grid Grid.Row="1">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition  Height="auto"/>
+                                                        <RowDefinition  Height="auto"/>
+                                                    </Grid.RowDefinitions>
+
+                                                    <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center">
+                                                        <Label Text="Cantidad" VerticalOptions="Center"/>
+                                                    </StackLayout>
+
+                                                    <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="End">
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="auto"/>
+                                                                <ColumnDefinition Width="auto"/>
+                                                                <ColumnDefinition Width="auto"/>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <Button x:Name="btnMenos" Grid.Column="0" BackgroundColor="#D0D0D0"  WidthRequest="30" HeightRequest="35" Padding="0" Text="-"
+                                                            CommandParameter="{Binding .}" Clicked="BtnMenos_Clicked"/>
+
+                                                            <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                                                                <Label x:Name="lblCantidad" Text="{Binding cantidad}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  HeightRequest="20"/>
+                                                            </StackLayout>
+
+                                                            <Button x:Name="btnMas" Grid.Column="2" BackgroundColor="#D0D0D0"  WidthRequest="30" HeightRequest="35" Padding="0" Text="+"
+                                                            CommandParameter="{Binding .}" Clicked="BtnMas_Clicked"/>
+
+                                                        </Grid>
+                                                    </StackLayout>
+
+                                                    <StackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Start">
+                                                        <Label Text="Precio Unidad"/>
+                                                    </StackLayout>
+                                                    <StackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="End">
+                                                        <Label Text="{Binding producto.precio, StringFormat='S/.{0}'}"/>
+                                                    </StackLayout>
+
+                                                    <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Start">
+                                                        <Label Text="Precio Total"  FontAttributes="Bold"/>
+                                                    </StackLayout>
+                                                    <StackLayout Grid.Column="1" Grid.Row="2" HorizontalOptions="End">
+                                                        <Label Text="{Binding montoTotal, StringFormat='S/.{0}'}" TextColor="#9C2424"/>
+                                                    </StackLayout>
+
+                                                    <Button x:Name="btnEliminar" Grid.ColumnSpan="2" Grid.Row="3" Text="Retirar de bolsa" CommandParameter="{Binding idbolsa}" 
+                                                    BackgroundColor="#9C2424" FontSize="10" HeightRequest="35"
+                                                    TextColor="White" Clicked="BtnEliminar_Clicked" Padding="0" />
+
+                                                </Grid>
+                                            </Grid>
+
+
+                                        </Grid>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+                
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

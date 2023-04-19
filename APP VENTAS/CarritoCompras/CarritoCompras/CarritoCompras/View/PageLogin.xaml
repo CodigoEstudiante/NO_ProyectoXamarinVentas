@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageLogin">
+
+    <StackLayout BackgroundColor="#A7A7A7" >
+
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            <Frame Grid.Row="1" Padding="10" Margin="10" HasShadow="True">
+                <StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="5">
+                        <Label Font="25" TextColor="#860000">Bienvenido</Label>
+                    </StackLayout>
+
+                    <Entry x:Name="txtEmail" Placeholder="Email" TextColor="Black" Text="testuser@gmail.com" />
+                    <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" TextColor="Black" Text="testuser123" />
+
+                    <Button x:Name="btnIniciarSesion" Text="Iniciar Sesión" BackgroundColor="#2FB96E" TextColor="White" Clicked="BtnIniciarSesion_Clicked" />
+                    <Button x:Name="btnRegistrarse" Text="Registrarse" BackgroundColor="#1964BE" TextColor="White" Clicked="BtnRegistrarse_Clicked"/>
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageCompras"
+             Title="Mis Compras">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#A7A7A7">
+            <ListView x:Name="ListViewCompra" ItemsSource="{Binding oListaCompra}" HasUnevenRows="True" IsPullToRefreshEnabled="False" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" Margin="2" BorderColor="Gray">
+                                <Grid Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="150" RowSpacing="0" ColumnSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0" Text="Tipo Entrega:" VerticalOptions="Start"/>
+                                        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding tipoEntrega}" VerticalOptions="Start"/>
+
+                                        <Label Grid.Row="1" Grid.Column="0" Text="Fecha Compra:" VerticalOptions="Start"/>
+                                        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding fechaCompra}" VerticalOptions="Start"/>
+
+                                        <Label Grid.Row="2" Grid.Column="0" Text="Monto Total:" VerticalOptions="Start"/>
+                                        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding precioTotal, StringFormat='S/.{0}'}" VerticalOptions="Start"/>
+
+                                        <Label Grid.Row="3" Grid.ColumnSpan="3" Text="Detalle Compra" VerticalOptions="Start"/>
+                                        <BoxView Grid.Row="4" Grid.ColumnSpan="3" Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
+
+                                        <Label Grid.Row="5" Grid.Column="0" Text="Nombre" VerticalOptions="Start" TextColor="#9C2424"/>
+                                        <Label Grid.Row="5" Grid.Column="1" Text="Monto" VerticalOptions="Start" TextColor="#9C2424"/>
+                                        <Label Grid.Row="5" Grid.Column="2" Text="Cantidad" VerticalOptions="Start" TextColor="#9C2424"/>
+
+                                        <StackLayout Grid.Row="6" Grid.ColumnSpan="3" Margin="0" Padding="0">
+                                            <ListView x:Name="ListViewCompra" ItemsSource="{Binding oListaBolsa}" HasUnevenRows="True" IsPullToRefreshEnabled="False" >
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <ViewCell IsEnabled="False">
+                                                            <Grid RowSpacing="0" ColumnSpacing="0" Margin="0" MinimumHeightRequest="50">
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="5*"/>
+                                                                    <ColumnDefinition Width="3*"/>
+                                                                    <ColumnDefinition Width="2*"/>
+                                                                </Grid.ColumnDefinitions>
+                                                                <Grid.RowDefinitions>
+                                                                    <RowDefinition/>
+                                                                </Grid.RowDefinitions>
+                                                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding producto.nombre}" TextColor="Black" VerticalOptions="Center" FontSize="12" />
+                                                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding montoTotal, StringFormat='S/.{0}'}" TextColor="Black" VerticalOptions="End" FontSize="12" />
+                                                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding cantidad}"  TextColor="Black" VerticalOptions="End" FontSize="12"/>
+                                                            </Grid>
+
+                                                        </ViewCell>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+                                        </StackLayout>
+                                    </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

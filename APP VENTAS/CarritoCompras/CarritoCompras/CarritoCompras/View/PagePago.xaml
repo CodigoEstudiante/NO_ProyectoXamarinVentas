@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PagePago"
+             Title="Pago">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Padding="10" Margin="10" HasShadow="True" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            
+                        </Grid.RowDefinitions>
+                        
+                        <StackLayout Grid.Row="0">
+                            <Label TextColor="#9C2424" Text="Métodos de Pago" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <Image Grid.Row="1" Source="pago.jpg" HeightRequest="100" WidthRequest="200"/>
+
+                        <StackLayout Grid.Row="2" Orientation="Vertical">
+                            <Label TextColor="Black" Text="Número de Tarjeta:"/>
+                            <Entry x:Name="txtNumeroTarjeta" Keyboard="Numeric"/>
+                        </StackLayout>
+                        
+                        <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="Start">
+                            <Label TextColor="Black" Text="Fecha de Expiración:"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <Entry x:Name="txtFechaMessExpiracion" Keyboard="Numeric" MaxLength="2" Placeholder="MM" Margin="0"/>
+                                <Entry Text="/" IsReadOnly="True"/>
+                                <Entry x:Name="txtFechaAñoExpiracion" Keyboard="Numeric" MaxLength="2" Placeholder="YY" Margin="0"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+
+                        <StackLayout  Grid.Row="4">
+                            <Label TextColor="Black" Text="Código CVV:"/>
+                            <Entry x:Name="txtCodigoCVV" MaxLength="3" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout  Grid.Row="5">
+                            <Label TextColor="Black" Text="Enviar detalle compra al email:"/>
+                            <Entry x:Name="txtEmail"/>
+                        </StackLayout>
+
+                        <Button Grid.Row="6" x:Name="btnConfirmarPago" Text="Comfirmar Pago" TextColor="White" HeightRequest="40" BackgroundColor="#2FB96E" HorizontalOptions="FillAndExpand" Clicked="BtnConfirmarPago_Clicked"/>
+
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

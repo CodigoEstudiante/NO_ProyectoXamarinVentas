@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "dbalmacen":{
+      ".read": "root.child('usuarios').child(auth.uid).exists()",  
+      ".write": "root.child('usuarios').child(auth.uid).exists()"
+    },
+    "usuarios":{
+      "$uid":{
+        ".read": "$uid === auth.uid" ,  
+    	".write": "$uid === auth.uid"
+      }
+    },
+    "bolsa":{
+      "$uid":{
+        ".read": "$uid === auth.uid" ,  
+    	".write": "$uid === auth.uid"
+      }
+    },
+    "ubigeo":{
+        ".read": "root.child('usuarios').child(auth.uid).exists()",  
+    	".write": "root.child('usuarios').child(auth.uid).exists()"
+    },
+    "tiendas":{
+        ".read": "root.child('usuarios').child(auth.uid).exists()",  
+    	".write": "root.child('usuarios').child(auth.uid).exists()"
+    },
+    "compra":{
+      "$uid":{
+        ".read": "$uid === auth.uid" ,  
+    	".write": "$uid === auth.uid"
+      }
+    }
+  }
+}

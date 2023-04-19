@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoCompras.View.PageExplorar"
+             Title="Explorar">
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="bolsa.png" Priority="0" Order="Primary" Clicked="TbiCarrito_Clicked" />
+    </ContentPage.ToolbarItems>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ListViewCategorias" ItemsSource="{Binding oListaCategoria}" HasUnevenRows="True" IsPullToRefreshEnabled="False" ItemTapped="ListViewCategorias_ItemTapped" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="270" RowSpacing="6">
+                                <Image Source="{Binding imagen}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                                <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#860000" Opacity="0.5">
+                                    <Label Text="{Binding nombre}" Margin="10" TextColor="White" FontSize="35"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
